@@ -17,6 +17,6 @@ A boilerplate template for spinning up Unity projects with Git and Git LFS alrea
 
 ## Notes
 
-- UnityYAMLMerge path in `setup.sh` assumes Mac. Update `UNITY_VERSION` at the top of the script to match your installed version.
+- Update `UNITY_VERSION` at the top of `setup.sh` to match your installed Unity version, and uncomment the path for your OS (Mac, Windows, or Linux).
 - Always do merges locally — GitHub's web UI does not have access to UnityYAMLMerge.
 - Git LFS requires a Git LFS-compatible remote. GitHub supports this out of the box.

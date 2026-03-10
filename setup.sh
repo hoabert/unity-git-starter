@@ -1,9 +1,20 @@
 #!/bin/bash
 
 # ── Config ────────────────────────────────────────────
-UNITY_VERSION="6000.3.10f1"   # change this per project
+# Update this to match your installed Unity version
+UNITY_VERSION="6000.3.10f1"
+
+# ── Unity Tools Path ──────────────────────────────────
+# Mac:
 UNITY_PATH="/Applications/Unity/Hub/Editor/$UNITY_VERSION/Unity.app/Contents/Tools"
+
+# Optinally you could use this to find the mac path
 # UNITY_PATH=$(find /Applications/Unity/Hub/Editor -name "UnityYAMLMerge" 2>/dev/null | head -1 | xargs dirname)
+
+# Windows (uncomment if on PC):
+# UNITY_PATH="C:/Program Files/Unity/Hub/Editor/$UNITY_VERSION/Editor/Data/Tools"
+# Linux (uncomment if on Linux):
+# UNITY_PATH="$HOME/Unity/Hub/Editor/$UNITY_VERSION/Editor/Data/Tools"
 
 # ── Git LFS ───────────────────────────────────────────
 echo "Setting up Git LFS..."
